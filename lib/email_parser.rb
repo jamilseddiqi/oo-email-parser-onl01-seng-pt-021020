@@ -17,11 +17,11 @@ class EmailParser
 #   csv_emails.split(/\s*,\s*/)
 # end 
 
-  def parse 
+def parse 
     csv_emails.split.collect do |address|
       address.split(',') 
     end
-    .flatten.uniq 
+    flatten.uniq 
   end 
 end 
 
